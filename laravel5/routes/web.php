@@ -19,4 +19,6 @@ Route::get('/customers', 'CustomerController@getAllCustomers');
 
 Route::get('/customers/{id}', 'CustomerController@getCustomer');
 
-Route::post('/customer', 'CustomerController@addCustomer');
+Route::get('/newcustomer', function(){
+  return view('customers/newcustomer');
+});

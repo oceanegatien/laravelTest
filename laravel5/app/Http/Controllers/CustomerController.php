@@ -11,10 +11,11 @@ class CustomerController extends Controller{
       return view('customers/customers', ['customers' => $customers]);
 
     }
-    public function getCustomer(){
-      echo "get customer";
+    public function getCustomer($id){
+      $customer =  DB::table('customers')->where('id', $id)->first();
+      return view('customers/customer', ['customer' => $customer]);
     }
     public function addCustomer(){
-      echo "add customer";
+
     }
 }

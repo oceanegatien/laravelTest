@@ -7,7 +7,7 @@
     <div class="row">
       <div class="col s12">
         @yield('table')
-
+        @yield('customer')
       </div>
     </div>
 

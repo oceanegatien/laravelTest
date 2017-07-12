@@ -1,4 +1,4 @@
-@extends('layout/default');
+@extends('layout/default')
 @section('table')
     <table>
       <thead>
@@ -13,7 +13,6 @@
       <tbody>
         <tr>
           @foreach($customers as $customer)
-
           <td>{{ $customer->firstName }}</td>
           <td>{{ $customer->lastName }}</td>
           <td>{{ $customer->email }}</td>
